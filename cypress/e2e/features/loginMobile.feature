@@ -20,6 +20,18 @@ Cenário: Validação de Login com credenciais válidas no iphone-xr
     Então eu devo ser redirecionado para a tela de "Products"
     E os produtos devem ser exibidos em uma única coluna vertical
 
+  Esquema do Cenário: Login bem-sucedido em diferentes tamanhos de tela
+    Dado eu esteja usando o dispositivo <dispositivo>
+    E eu faço login válido
+    Então eu devo ser redirecionado para a tela de "Products"
+    E os produtos devem ser exibidos em uma única coluna vertical
+
+    Exemplos:
+      | dispositivo   |
+      | "iphone-xr"   |
+      | "samsung-s10" |
+      | "[412, 915]"  |     
+
 # @login_invalido
 # Esquema do Cenário: Validação de Login com credenciais inválidas com mensagem
 #     Quando eu preencho os campos de usuário e senha com as credenciais do usuário <perfil_usuario>

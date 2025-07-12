@@ -32,6 +32,11 @@ module.exports = defineConfig({
       const version = config.env.version || 'qa'
       config.env = require(`./cypress/config/${version}.json`);
       config.baseUrl = config.env.baseUrl;
+
+            // Atribui os valores do seu JSON para as chaves de configuração globais do Cypress
+      config.viewportWidth = config.env.viewportWidth;
+      config.viewportHeight = config.env.viewportHeight;
+
       return config;
     },
   },
