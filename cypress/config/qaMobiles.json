@@ -1,0 +1,10 @@
+{
+    "baseUrl": "https://www.saucedemo.com/v1",
+    "viewports": {
+        "desktop-hd": [1366, 768],
+        "desktop-fhd": [1920, 1080],
+        "iphone-xr": [414, 896],
+        "samsung-s10": [360, 740],
+        "pixel-7": [412, 915]
+  }
+}

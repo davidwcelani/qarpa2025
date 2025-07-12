@@ -30,7 +30,8 @@ Cenário: Validação de Login com credenciais válidas no iphone-xr
       | dispositivo   |
       | "iphone-xr"   |
       | "samsung-s10" |
-      | "[412, 915]"  |     
+      | "[412, 915]"  |
+      | "pixel-7"     |  
 
 # @login_invalido
 # Esquema do Cenário: Validação de Login com credenciais inválidas com mensagem
