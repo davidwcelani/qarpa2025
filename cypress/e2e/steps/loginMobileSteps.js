@@ -1,9 +1,13 @@
-import { Given, When, Then } from "cypress-cucumber-preprocessor/steps";
+import { Given, When, Then, And } from "cypress-cucumber-preprocessor/steps";
 
 
 When('eu esteja usando o dispositivo {string}', (mobile) => {
     cy.viewport(mobile);
     cy.log(`Dispositivo configurado para: ${mobile}`);
+  });
+
+  And('eu faço login válido', () => {
+    cy.loginValido('standard_user', 'secret_sauce');
   });
 
 Then('os produtos devem ser exibidos em uma única coluna vertical', () => {

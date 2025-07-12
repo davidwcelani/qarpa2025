@@ -16,8 +16,7 @@ Contexto: O usuário deve estar na página de login do saucedemo
 @login_valido
 Cenário: Validação de Login com credenciais válidas no iphone-xr
     Quando eu esteja usando o dispositivo "iphone-xr"
-    E eu preencho os campos de usuário e senha com as credenciais do usuário "usuario_valido"
-    E eu clico no botão "LOGIN"
+    E eu faço login válido
     Então eu devo ser redirecionado para a tela de "Products"
     E os produtos devem ser exibidos em uma única coluna vertical
 
